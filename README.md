@@ -27,4 +27,4 @@ The node modules must first be installed using:
 
 ![img](https://github.com/uhwgmxorg/MyIonicReactUserManagementWithRolesApp.node/blob/master/Doc/96_2.png)
 
-You can get more Information on: https://uhwgmxorg.wordpress.com/2023/05/02/myionicreactusermanagementwithrolesapp/
+You can get more Information on: https://uhwgmxorg.wordpress.com/2023/07/30/myionicreactusermanagementwithrolesapp/
