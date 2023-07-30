@@ -1,0 +1,53 @@
+// Use
+// npx prisma db pull
+// npx prisma generate
+// npx prisma migrate
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://dev_user:passwort@198.168.2.46:5432/mydb?schema=dev"
+}
+
+model users {
+  id                  Int                   @id @default(autoincrement())
+  username            String                @db.VarChar(50)
+  email               String                @db.VarChar(100)
+  password            String                @db.VarChar(255)
+  user_group_mappings user_group_mappings[]
+}
+
+model user_group_mappings {
+  user_id     Int
+  group_id    Int
+  user_groups user_groups @relation(fields: [group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users       users       @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([user_id, group_id])
+}
+
+model user_group_role_mappings {
+  group_id    Int
+  role_id     Int
+  user_groups user_groups @relation(fields: [group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  user_roles  user_roles  @relation(fields: [role_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@id([group_id, role_id])
+}
+
+model user_groups {
+  id                       Int                        @id @default(autoincrement())
+  name                     String                     @db.VarChar(50)
+  user_group_mappings      user_group_mappings[]
+  user_group_role_mappings user_group_role_mappings[]
+}
+
+model user_roles {
+  id                       Int                        @id @default(autoincrement())
+  name                     String                     @db.VarChar(50)
+  user_group_role_mappings user_group_role_mappings[]
+}

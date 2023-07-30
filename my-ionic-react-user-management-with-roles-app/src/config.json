@@ -1,0 +1,7 @@
+{
+  "rest-api-user": "http://localhost:8081/rest-api/users",
+  "rest-api-group": "http://localhost:8081/rest-api/groups",
+  "rest-api-role": "http://localhost:8081/rest-api/roles",
+  "user_group_mappings": "http://localhost:8081/rest-api/group_mappings",
+  "user_group_role_mappings": "http://localhost:8081/rest-api/group_role_mappings"
+}

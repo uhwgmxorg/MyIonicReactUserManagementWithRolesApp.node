@@ -1,0 +1,7 @@
+{
+  "name": "my-ionic-react-user-management-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

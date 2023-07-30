@@ -1,0 +1,106 @@
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.my-ion-list-header {
+    font-family: "Ihr Schriftartname", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.my-flex-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.my-textheadline-style {
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+}
+
+.my-text-style {
+    margin: 5%;
+    font-weight: 0;
+}
+
+.custom-color-button {
+    background-color: #7a7a7a;
+    color: #ffffff;
+}
+
+.custom-checkbox::part(checkmark) {
+    box-shadow: inset 0 0 0 2px white;
+}
+
+.custom-checkbox {
+    --background-checked: darkgray;
+    --border-color-checked: darkgray;
+}
+
+.ion-row {
+    height: auto;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+}
+  
+.ion-col1 {
+    background-color: #5f5f5f;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: left;
+    display:inline-block;
+    height: auto;    
+    vertical-align: top;
+    width : 50px;
+    height: 35px;
+  }
+    
+.ion-col2 {
+    background-color: #5f5f5f;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: left;
+    display:inline-block;
+    height: auto;    
+    vertical-align: top;
+    width : 75px;
+    height: 35px;
+  }
+    
+.ion-col3 {
+    background-color: #5f5f5f;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: left;
+    display:inline-block;
+    height: auto;    
+    vertical-align: top;
+    width : 130px;
+    height: 35px;
+  }
+    
+.ion-col4 {
+    background-color: #5f5f5f;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: left;
+    display:inline-block;
+    height: auto;    
+    vertical-align: top;
+    width : 110px;
+    height: 35px;
+  }
